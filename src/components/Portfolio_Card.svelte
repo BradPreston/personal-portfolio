@@ -62,6 +62,7 @@ a {
     font-weight: 300;
     font-size: 1.6rem;
     display: flex;
+    align-items: center;
     width: 84px;
     transition: .25s ease;
 }
