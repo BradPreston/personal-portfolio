@@ -1,0 +1,60 @@
+:global(*) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:global(:root) {
+    --main-color: #ff9934;
+    --main-light: #ffa64e;
+    --main-lighter: #ffb76f;
+    --main-dark: #ff8b1a;
+    --main-darker: #ff7f00;
+    --black: #333;
+    --white: #fff;
+    font-size: 10px;
+}
+
+:global(body) {
+    font-size: 1.6rem;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--black);
+    margin: 0 auto;
+}
+
+:global(h1){
+    color: var(--main-color);
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+:global(h2) {
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+:global(.wrapper) {
+    height: calc(100vh - 90px);
+    width: 100vw;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 481px) {
+    :global(h1) {
+        font-size: 4rem;
+    }
+
+    :global(h2) {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    :global(h1) {
+        font-size: 6rem;
+    }
+
+    :global(h2) {
+        font-size: 2rem;
+    }
+}
